@@ -1,0 +1,5 @@
+touch .npmrc
+echo "prefix=/var/tmp/mine/code/angular/shared_node_modules" > ~/.npmrc
+ng new angular-i18n-app --skip-install
+cd angular-i18n-app
+pnpm install --store-dir /var/tmp/mine/code/angular/shared_node_modules  //Since .nprc is availabe --store-dir may not require
